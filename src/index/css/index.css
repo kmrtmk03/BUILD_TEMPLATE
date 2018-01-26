@@ -1,0 +1,11 @@
+.Wrap {
+    display: flex;
+}
+
+
+.Main {
+    background-color: #ccc;
+    height: 100vh;
+    padding: 1rem 2rem;
+    width: calc(100% - 30%);
+}
