@@ -10,8 +10,14 @@
 
 ## command
 * **npm run start** （ウォッチ開始)
-* **npm run build** （ビルド）
-* **npm run clean** （出力先フォルダを削除）
+* **npm run build** （すべての環境でビルド）
+* **npm run build:local** （ローカル環境でビルド）
+* **npm run build:development** （開発環境でビルド）
+* **npm run build:production** （本番環境でビルド）
+* **npm run clean** （すべての環境を削除）
+* **npm run clean:local** （ローカル環境を削除）
+* **npm run clean:development** （開発環境を削除）
+* **npm run clean:production** （本番環境を削除）
 
 ## direcotry
 * **src**（編集フォルダ）
