@@ -1,11 +1,10 @@
-.Wrap {
+.Index-Wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
-
-.Main {
+.Index-Main {
     background-color: #ccc;
     height: 100vh;
     padding: 1rem 2rem;

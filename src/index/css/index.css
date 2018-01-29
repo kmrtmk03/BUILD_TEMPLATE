@@ -1,9 +1,10 @@
-.Wrap {
+$Prefix: Index;
+
+.$(Prefix)-Wrap {
     display: flex;
 }
 
-
-.Main {
+.$(Prefix)-Main {
     background-color: #ccc;
     height: 100vh;
     padding: 1rem 2rem;
