@@ -38,10 +38,16 @@ TARGETS_JS.map ( (target) => {
 
 /* ==================== Plugin Config ==================== */
 
-let PLUGINS = [] //本番
+let PLUGINS = [
+    new webpack.ProvidePlugin({})
+]
 if(CONFIG.IS_PRODUCTION) {
     PLUGINS.push(
-        new webpack.optimize.UglifyJsPlugin()
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                drop_console: true
+            }
+        })
     )
 }
 
