@@ -24,14 +24,14 @@
 
 ## HTML(EJS)
 * "common/template"に共通コンポーネントを格納
-* コンポーネントのファイル名は必ず_から始める
-* 各ファイルの1行目にプレフィックスを格納する変数Prefixを記述し、各classの最初に"<%- Prefix %>"をつける
+* コンポーネントのファイル名は必ずアンダースコアから始める
+* 各ファイルの1行目にプレフィックスを格納する変数Prefixを記述し、各classの最初に<%- Prefix %>をつける
 
 ## CSS
 * 共通CSSは"common/css/common.css"に、ページ固有のCSSは"各ページ/css/index.css"に各ファイルを@importで読み込む
-* 読み込まれるCSSのファイル名は必ず_から始める
-* 各ファイルの1行目にプレフィックスを格納する変数Prefixを記述し、各classの最初に"$(Prefix)"をつける
-* 基本的には”postcss-custom-properties"で記述し、プロパティ以外の箇所に変数を使う場合のみ"postcss-simple-vars"で記述する
+* 読み込まれるCSSのファイル名は必ずアンダースコアから始める
+* 各ファイルの1行目にプレフィックスを格納する変数Prefixを記述し、各classの最初に$(Prefix)をつける
+* 基本的にはpostcss-custom-propertiesで記述し、プロパティ以外の箇所に変数を使う場合のみ"postcss-simple-vars"で記述する
 
 ## PostCSS Plugin
 * postcss-import
