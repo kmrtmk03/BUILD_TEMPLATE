@@ -1,13 +1,15 @@
+<% var Prefix = 'Index' %>
+
 <%- include(setting.COMMON_HEAD_FILE) %>
 
     <%- include(setting.COMMON_HEADER_FILE) %>
-    
-    <main class="Wrap">
 
-        <section class="Main">
+    <main class="<%- Prefix %>-Wrap">
+
+        <section class="<%- Prefix %>-Main">
             <h2 class="MainTitle">Index.html</h2>
         </section>
-        
+
         <%- include(setting.COMMON_SIDE_FILE) %>
 
     </main>
