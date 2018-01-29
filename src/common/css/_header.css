@@ -1,0 +1,12 @@
+$Prefix: Header;
+
+.$(Prefix)-Wrap {
+    background-color: #333;
+    padding: 1rem 2rem;
+}
+    .$(Prefix)-Title {
+        color: var(--h1Color);
+    }
+        .$(Prefix)-Title-Link {
+            color: var(--h1Color);
+        }

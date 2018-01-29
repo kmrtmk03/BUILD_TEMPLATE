@@ -1,11 +1,6 @@
 @import '_variable.css';
 @import '_reset.css';
-
-header {
-    background-color: #333;
-    padding: 1rem 2rem;
-    h1 { color: var(--h1Color) }
-}
+@import '_header.css';
 
 .Side {
     background-color: #eee;

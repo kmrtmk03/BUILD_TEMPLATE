@@ -7,11 +7,16 @@
     margin: 0;
     padding: 0;
 }
-header {
+.Header-Wrap {
     background-color: #333;
     padding: 1rem 2rem;
 }
-header h1 { color: #fff }
+.Header-Title {
+        color: #fff;
+    }
+.Header-Title-Link {
+            color: #fff;
+        }
 .Side {
     background-color: #eee;
     height: 100vh;
