@@ -7,21 +7,17 @@
     margin: 0;
     padding: 0;
 }
-
 header {
     background-color: #333;
     padding: 1rem 2rem;
 }
-
 header h1 { color: #fff }
-
 .Side {
     background-color: #eee;
     height: 100vh;
     padding: 1rem 2rem;
     width: 30%;
 }
-
 footer {
     background-color: #aaa;
     color: #fff;
