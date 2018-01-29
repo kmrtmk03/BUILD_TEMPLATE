@@ -1,13 +1,8 @@
 @import '_variable.css';
 @import '_reset.css';
 @import '_header.css';
+@import '_side.css';
 
-.Side {
-    background-color: #eee;
-    height: 100vh;
-    padding: 1rem 2rem;
-    width: 30%;
-}
 
 footer {
     background-color: #aaa;

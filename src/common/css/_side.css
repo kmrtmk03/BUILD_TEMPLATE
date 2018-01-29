@@ -1,0 +1,8 @@
+$Prefix: Side;
+
+.$(Prefix)-Wrap {
+    background-color: #eee;
+    height: 100vh;
+    padding: 1rem 2rem;
+    width: 30%;
+}
