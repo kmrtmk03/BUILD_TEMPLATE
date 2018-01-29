@@ -49,15 +49,15 @@ if(CONFIG.IS_PRODUCTION) {
 /* ==================== Module Export ==================== */
 
 module.exports = {
-    
+
     entry: ENTRY_LIST,
-    
+
     output: {
         filename: '[name]'
     },
 
     plugins: PLUGINS,
-    
+
     module: {
         rules: [{
             test: /\.js$/,
@@ -74,7 +74,7 @@ module.exports = {
             }]
         }]
     },
-    
+
     devtool: 'source-map'
 
 }
