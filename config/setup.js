@@ -49,11 +49,12 @@ export default class Setup {
 
         //EXCLUDE
         CONFIG.EXCLUDE_EJS = `!${ CONFIG.SRC_DIR }/**/_*.ejs`
+        CONFIG.EXCLUDE_CSS = `!${ CONFIG.SRC_DIR }/**/_*.css`
         CONFIG.EXCLUDE_EJS_INDEX = `!${ CONFIG.SRC_DIR + CONFIG.EDIT_EJS_INDEX }`
         CONFIG.EXCLUDE_CSS_INDEX = `!${ CONFIG.SRC_DIR + CONFIG.EDIT_CSS_INDEX }`
         CONFIG.EXCLUDE_IMG_INDEX = `!${ CONFIG.SRC_DIR + CONFIG.EDIT_IMG_INDEX }`
         CONFIG.EXCLUDE_SVG_INDEX = `!${ CONFIG.SRC_DIR + CONFIG.EDIT_SVG_INDEX }`
-        
+
         //TASK
         CONFIG.TASK_DEFAULT = 'default'
         CONFIG.TASK_BUILD = 'build'
@@ -65,7 +66,7 @@ export default class Setup {
         CONFIG.TASK_SERVER = 'server'
         CONFIG.TASK_BS = 'bs'
         CONFIG.TASK_CLEAN = 'clean'
-        
+
         //TASK_INDEX
         CONFIG.TASK_EJS_INDEX = 'ejsIndex'
         CONFIG.TASK_POSTCSS_INDEX = 'postcssIndex'
