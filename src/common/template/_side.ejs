@@ -1,9 +1,10 @@
 <% var Prefix = 'Side' %>
 
-<section class="<%- Prefix %>-Wrap">
+<section class="<%- Prefix %>-Wrap" id="<%- Prefix %>-Wrap">
     <ul class="<%- Prefix %>-Link-Wrap">
-        <li class="<%- Prefix %>-Link-Item"><a class="<%- Prefix %>-Link-Text" href="<%= setting.URL_HOME %>">Home</li>
-        <li class="<%- Prefix %>-Link-Item"><a class="<%- Prefix %>-Link-Text" href="<%= setting.URL_PAGEA %>">Page A</li>
-        <li class="<%- Prefix %>-Link-Item"><a class="<%- Prefix %>-Link-Text" href="<%= setting.URL_PAGEB %>">Page B</li>
+        <li class="<%- Prefix %>-Link-Item"><a class="<%- Prefix %>-Link-Text" href="<%= setting.URL_HOME %>">Home</a></li>
+        <li class="<%- Prefix %>-Link-Item"><a class="<%- Prefix %>-Link-Text" href="<%= setting.URL_PAGEA %>">Page A</a></li>
+        <li class="<%- Prefix %>-Link-Item"><a class="<%- Prefix %>-Link-Text" href="<%= setting.URL_PAGEB %>">Page B</a></li>
     </ul>
+    <div class="<%- Prefix %>-Button" id="<%- Prefix %>-Button">←</div>
 </section>
