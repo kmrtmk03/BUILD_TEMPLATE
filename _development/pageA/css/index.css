@@ -1,12 +1,17 @@
 .PageA-Wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    overflow: hidden;
+    position: relative;
 }
 
 .PageA-Main {
     background-color: #a00;
     height: 100vh;
     padding: 1rem 2rem;
-    width: 70%;
+    width: 100%;
+}
+
+.PageA-Title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
 }

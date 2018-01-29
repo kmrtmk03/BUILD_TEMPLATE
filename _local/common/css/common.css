@@ -21,11 +21,39 @@
     background-color: #eee;
     height: 100vh;
     padding: 1rem 2rem;
+    position: absolute;
+    -webkit-transition: .5s;
+    transition: .5s;
+    top: 0;
+    left: 100%;
     width: 30%;
 }
+.Side-Wrap--Open {
+        -webkit-transition: .7s;
+        transition: .7s;
+        left: 70%;
+    }
 .Side-Link-Text {
     text-decoration: underline;
 }
+.Side-Button {
+    background-color: red;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    height: 30px;
+    left: -100px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    width: 30px;
+}
+.Side-Button:hover {
+        cursor: pointer;
+        opacity: .7;
+    }
 footer {
     background-color: #aaa;
     color: #fff;

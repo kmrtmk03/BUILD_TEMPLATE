@@ -4,8 +4,35 @@ $Prefix: Side;
     background-color: #eee;
     height: 100vh;
     padding: 1rem 2rem;
+    position: absolute;
+    transition: .5s;
+    top: 0;
+    left: 100%;
     width: 30%;
+    &--Open {
+        transition: .7s;
+        left: 70%;
+    }
 }
 .$(Prefix)-Link-Text {
     text-decoration: underline;
+}
+
+.$(Prefix)-Button {
+    background-color: red;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    height: 30px;
+    left: -100px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    width: 30px;
+    &:hover {
+        cursor: pointer;
+        opacity: .7;
+    }
 }

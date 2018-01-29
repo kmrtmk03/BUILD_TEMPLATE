@@ -1,1 +1,1 @@
-.PageA-Wrap{display:-webkit-box;display:-ms-flexbox;display:flex}.PageA-Main{background-color:#a00;height:100vh;padding:1rem 2rem;width:70%}
+.PageA-Wrap{overflow:hidden;position:relative}.PageA-Main{background-color:#a00;height:100vh;padding:1rem 2rem;width:100%}.PageA-Title{color:#fff;font-size:2rem;font-weight:700}

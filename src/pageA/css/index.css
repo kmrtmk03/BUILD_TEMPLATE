@@ -1,12 +1,19 @@
 $Prefix: PageA;
 
 .$(Prefix)-Wrap {
-    display: flex;
+    overflow: hidden;
+    position: relative;
 }
 
 .$(Prefix)-Main {
     background-color: #a00;
     height: 100vh;
     padding: 1rem 2rem;
-    width: calc(100% - 30%);
+    width: 100%;
+}
+
+.$(Prefix)-Title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
 }
