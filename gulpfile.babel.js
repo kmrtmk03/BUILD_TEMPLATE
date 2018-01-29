@@ -92,6 +92,7 @@ gulp.task(CONF.TASK_POSTCSS, () => {
 function taskPostcss(src, dist) {
 
     const postcssImport = require('postcss-import')
+    const postcssSimpleVars = require('postcss-simple-vars')
     const customProperties = require('postcss-custom-properties')
     const postcssMixin = require('postcss-mixins')
     const nested = require('postcss-nested')
@@ -106,6 +107,7 @@ function taskPostcss(src, dist) {
         }))
         .pipe(postcss([
             postcssImport,
+            postcssSimpleVars,
             customProperties,
             postcssMixin,
             nested,
