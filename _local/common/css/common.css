@@ -23,6 +23,9 @@
     padding: 1rem 2rem;
     width: 30%;
 }
+.Side-Link-Text {
+    text-decoration: underline;
+}
 footer {
     background-color: #aaa;
     color: #fff;
