@@ -96,7 +96,7 @@ export default class Setup {
         //コマンドの引数で分岐
         switch (this.MODE) {
 
-            //local
+            //LOCAL
             case 'local':
                 CONFIG.MODE = 'local'
                 CONFIG.URL = 'http://localhost:3000'
@@ -104,7 +104,7 @@ export default class Setup {
                 CONFIG.IS_PRODUCTION = false
                 break
 
-            //開発環境
+            //DEVELOPMENT
             case 'development':
                 CONFIG.MODE = 'develompent'
                 CONFIG.URL = 'https://development.co.jp'
@@ -112,7 +112,7 @@ export default class Setup {
                 CONFIG.IS_PRODUCTION = false
                 break
 
-            //本番環境
+            //PRODUCTION
             case 'production':
                 CONFIG.MODE = 'production'
                 CONFIG.URL = 'https://production.co.jp'
@@ -121,6 +121,12 @@ export default class Setup {
                 break
 
         }
+
+        // PAGE URL
+         CONFIG.URL_HOME = `${ CONFIG.URL }/`
+         CONFIG.URL_PAGEA = `${ CONFIG.URL }/pageA/`
+         CONFIG.URL_PAGEB = `${ CONFIG.URL }/pageB/`
+
         return CONFIG
     }
 }
