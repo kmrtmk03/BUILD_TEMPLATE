@@ -1,1 +1,4 @@
-console.log('COMMON!!')
+require('./header')
+require('./footer')
+
+console.log('COMMON!!!!')
