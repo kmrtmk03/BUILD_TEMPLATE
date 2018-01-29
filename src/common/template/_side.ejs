@@ -1,3 +1,9 @@
-    <section class="Side">
-        <h2>Side Component</h2>
-    </section>
+<% var Prefix = 'Side' %>
+
+<section class="<%- Prefix %>-Wrap">
+    <ul class="<%- Prefix %>-Link-Wrap">
+        <li class="<%- Prefix %>-Link-Item"><a href="<%= setting.URL %>/">Home</li>
+        <li class="<%- Prefix %>-Link-Item"><a href="<%= setting.URL %>/pageA">Page A</li>
+        <li class="<%- Prefix %>-Link-Item"><a href="<%= setting.URL %>/pageB">Page B</li>
+    </ul>
+</section>
