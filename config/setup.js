@@ -85,7 +85,7 @@ export default class Setup {
             CONFIG.TASK_IMG,
             CONFIG.TASK_SVG
         ]
-        
+
         //BUILD TARGET JS
         CONFIG.TARGETS_JS = globAll.sync([
             CONFIG.SRC_DIR + CONFIG.EDIT_JS,
@@ -107,7 +107,7 @@ export default class Setup {
             //開発環境
             case 'development':
                 CONFIG.MODE = 'develompent'
-                CONFIG.URL = 'http://dsky.imgsrc.co.jp'
+                CONFIG.URL = 'https://development.co.jp'
                 CONFIG.DIST_DIR = './_development'
                 CONFIG.IS_PRODUCTION = false
                 break
@@ -115,7 +115,7 @@ export default class Setup {
             //本番環境
             case 'production':
                 CONFIG.MODE = 'production'
-                CONFIG.URL = 'https:dsky.com'
+                CONFIG.URL = 'https://production.co.jp'
                 CONFIG.DIST_DIR = './_production'
                 CONFIG.IS_PRODUCTION = true
                 break
