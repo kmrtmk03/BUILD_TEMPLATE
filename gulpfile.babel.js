@@ -85,7 +85,7 @@ gulp.task(CONF.TASK_POSTCSS_INDEX, () => {
 
 // ===== Underlayer =====
 gulp.task(CONF.TASK_POSTCSS, () => {
-    taskPostcss([CONF.SRC_DIR + CONF.EDIT_CSS, CONF.EXCLUDE_CSS_INDEX], CONF.DIST_DIR)
+    taskPostcss([CONF.SRC_DIR + CONF.EDIT_CSS, CONF.EXCLUDE_CSS_INDEX, CONF.EXCLUDE_CSS], CONF.DIST_DIR)
 })
 
 // ===== Function =====
