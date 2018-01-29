@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -82,8 +82,24 @@ console.log('HEADER!!!!');
 console.log('FOOTER!!!!');
 
 /***/ }),
-/* 2 */,
-/* 3 */
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+//get element
+var SideWrap = document.getElementById('Side-Wrap');
+var SideButton = document.getElementById('Side-Button');
+
+//sidebar toggle
+SideButton.addEventListener('click', function () {
+    SideWrap.classList.toggle('Side-Wrap--Open');
+});
+
+/***/ }),
+/* 3 */,
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -91,8 +107,7 @@ console.log('FOOTER!!!!');
 
 __webpack_require__(0);
 __webpack_require__(1);
-
-console.log('COMMON!!!!');
+__webpack_require__(2);
 
 /***/ })
 /******/ ]);

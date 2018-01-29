@@ -60,29 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/******/ ({
 
-"use strict";
-
-
-console.log('HEADER!!!!');
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-console.log('FOOTER!!!!');
-
-/***/ }),
-/* 2 */
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -97,18 +80,7 @@ SideButton.addEventListener('click', function () {
     SideWrap.classList.toggle('Side-Wrap--Open');
 });
 
-/***/ }),
-/* 3 */,
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-__webpack_require__(0);
-__webpack_require__(1);
-__webpack_require__(2);
-
 /***/ })
-/******/ ]);
-//# sourceMappingURL=common.js.map
+
+/******/ });
+//# sourceMappingURL=side.js.map
