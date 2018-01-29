@@ -25,15 +25,16 @@
 ## HTML(EJS)
 * "common/template"に共通コンポーネントを格納
 * コンポーネントのファイル名は必ず_から始める
+* 各ファイルの1行目にプレフィックスを格納する変数Prefixを記述し、各classの最初に"<%- Prefix %>"をつける
+
 
 ## CSS
-* 共通CSSは"common/css/common.css"に、  
-ページ固有のCSSは"各ページ/css/index.css"に各ファイルを@importで読み込む
+* 共通CSSは"common/css/common.css"に、ページ固有のCSSは"各ページ/css/index.css"に各ファイルを@importで読み込む
 * 読み込まれるCSSのファイル名は必ず_から始める
+* 各ファイルの1行目にプレフィックスを格納する変数Prefixを記述し、各classの最初に"$(Prefix)"をつける
 
 ## JavaScript
-* 共通JSは"common/js/common.js"に、  
-ページ固有のJSは"各ページ/js/index.js"に各ファイルをrequire()で読み込む
+* 共通JSは"common/js/common.js"に、ページ固有のJSは"各ページ/js/index.js"に各ファイルをrequire()で読み込む
 
 ## PostCSS Config
 * postcss-import
