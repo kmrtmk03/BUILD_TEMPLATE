@@ -91,20 +91,23 @@ gulp.task(CONF.TASK_POSTCSS, () => {
 // ===== Function =====
 function taskPostcss(src, dist) {
 
-    const customProperties = require('postcss-custom-properties')
     const postcssImport = require('postcss-import')
+    const customProperties = require('postcss-custom-properties')
+    const postcssMixin = require('postcss-mixins')
     const nested = require('postcss-nested')
-    const calc = require('postcss-calc')
+    const postcssCalc = require('postcss-calc')
+
 
     gulp.src(src)
         .pipe(plumber({
             errorHandler: notify.onError("Error: <%= error.message %>")
         }))
         .pipe(postcss([
-            customProperties,
             postcssImport,
+            customProperties,
+            postcssMixin,
             nested,
-            calc
+            postcssCalc
         ]))
         .pipe(autoprefixer({
             browsers: SUPPORT_BROWSERS,
