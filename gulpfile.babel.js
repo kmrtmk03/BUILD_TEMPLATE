@@ -96,6 +96,7 @@ function taskPostcss(src, dist) {
     const postcssMixin = require('postcss-mixins')
     const nested = require('postcss-nested')
     const postcssCalc = require('postcss-calc')
+    const postcssFlexbugsFixes = require('postcss-flexbugs-fixes')
     const postcssSorting = require('postcss-sorting')
 
 
@@ -109,6 +110,7 @@ function taskPostcss(src, dist) {
             postcssMixin,
             nested,
             postcssCalc,
+            postcssFlexbugsFixes,
             postcssSorting
         ]))
         .pipe(autoprefixer({
