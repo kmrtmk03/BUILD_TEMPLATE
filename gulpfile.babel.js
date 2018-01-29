@@ -14,7 +14,6 @@ import plumber from 'gulp-plumber'
 import notify from 'gulp-notify'
 import minimist from 'minimist'
 import gulpif from 'gulp-if'
-import openSync from 'fs'
 import browserslist from 'browserslist'
 import runSequence from 'run-sequence'
 import rimraf from 'rimraf'
@@ -29,7 +28,6 @@ import svgmin from 'gulp-svgmin'
 
 import webpackConfig from './config/webpack.config' //webpackのconfig
 import Setup from './config/setup' //セットアップ用のClass
-// import { fail } from 'assert';
 
 
 /* ==================== Get Mode ==================== */
