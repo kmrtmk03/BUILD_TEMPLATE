@@ -26,11 +26,13 @@
 * **production**（本番環境用）
 * **config**（設定ファイル用フォルダ）
 
-## HTML
-* EJS
+## HTML(EJS)
 
-## CSS
-* PostCSS
+## CSS(PostCSS)
+* postcss-import
+* postcss-custom-properties
+* postcss-mixins
+* postcss-nested
+* postcss-calc
 
-## JS
-* ES2015
+## JS(ES2015)
