@@ -100,7 +100,6 @@ function taskPostcss(src, dist) {
     const postcssFlexbugsFixes = require('postcss-flexbugs-fixes')
     const postcssSorting = require('postcss-sorting')
 
-
     gulp.src(src)
         .pipe(plumber({
             errorHandler: notify.onError("Error: <%= error.message %>")
