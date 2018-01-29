@@ -96,6 +96,7 @@ function taskPostcss(src, dist) {
     const postcssMixin = require('postcss-mixins')
     const nested = require('postcss-nested')
     const postcssCalc = require('postcss-calc')
+    const postcssSorting = require('postcss-sorting')
 
 
     gulp.src(src)
@@ -107,7 +108,8 @@ function taskPostcss(src, dist) {
             customProperties,
             postcssMixin,
             nested,
-            postcssCalc
+            postcssCalc,
+            postcssSorting
         ]))
         .pipe(autoprefixer({
             browsers: SUPPORT_BROWSERS,
