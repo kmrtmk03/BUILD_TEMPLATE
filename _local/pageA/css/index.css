@@ -1,3 +1,12 @@
-h3 {
-    color: green;
+.PageA-Wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.PageA-Main {
+    background-color: #a00;
+    height: 100vh;
+    padding: 1rem 2rem;
+    width: 70%;
 }

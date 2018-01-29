@@ -1,7 +1,12 @@
-:root {
-    --color: #333;
+$Prefix: PageA;
+
+.$(Prefix)-Wrap {
+    display: flex;
 }
 
-h3 {
-    color: green;
+.$(Prefix)-Main {
+    background-color: #a00;
+    height: 100vh;
+    padding: 1rem 2rem;
+    width: calc(100% - 30%);
 }

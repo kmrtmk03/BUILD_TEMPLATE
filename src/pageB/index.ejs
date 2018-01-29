@@ -1,14 +1,18 @@
+<% var Prefix = 'PageB' %>
+
 <%- include(setting.COMMON_HEAD_FILE) %>
 
     <%- include(setting.COMMON_HEADER_FILE) %>
-    
-    <main>
-        <h2 class="MainTitle">Mainコンポーネントです</h2>
-    </main>
 
-    <div class="SideComp">
-        <h2>Sideコンポーネントです</h2>
-    </div>
+    <main class="<%- Prefix %>-Wrap">
+
+        <section class="<%- Prefix %>-Main">
+            <h2 class="MainTitle">Page B</h2>
+        </section>
+
+        <%- include(setting.COMMON_SIDE_FILE) %>
+
+    </main>
 
     <%- include(setting.COMMON_FOOTER_FILE) %>
 
