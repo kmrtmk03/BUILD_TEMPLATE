@@ -98,6 +98,7 @@ function taskPostcss(src, dist) {
     const nested = require('postcss-nested')
     const postcssCalc = require('postcss-calc')
     const postcssFlexbugsFixes = require('postcss-flexbugs-fixes')
+    const postcssMqpacker = require('css-mqpacker')
     const postcssSorting = require('postcss-sorting')
 
     gulp.src(src)
@@ -112,6 +113,7 @@ function taskPostcss(src, dist) {
             nested,
             postcssCalc,
             postcssFlexbugsFixes,
+            postcssMqpacker,
             postcssSorting
         ]))
         .pipe(autoprefixer({
