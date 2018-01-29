@@ -1,8 +1,5 @@
+@import '_variable.css';
 @import '_reset.css';
-
-:root {
-    --h1Color: #fff;
-}
 
 header {
     background-color: #333;
