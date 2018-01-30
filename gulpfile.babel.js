@@ -1,22 +1,32 @@
 /* ==================== Import Modules ==================== */
 
+// ===== System =====
 import gulp from 'gulp'
-import ejs from 'gulp-ejs'
-import rename from 'gulp-rename'
-import minifyHTML from 'gulp-minify-html'
-import postcss from 'gulp-postcss'
-import autoprefixer from 'gulp-autoprefixer'
-import cssmin from 'gulp-cssmin'
-import webpack from 'webpack'
-import webpackStream from 'webpack-stream'
+import changed from 'gulp-changed'
 import browserSync from 'browser-sync'
 import plumber from 'gulp-plumber'
 import notify from 'gulp-notify'
-import minimist from 'minimist'
+import rename from 'gulp-rename'
 import gulpif from 'gulp-if'
+import minimist from 'minimist'
 import browserslist from 'browserslist'
 import runSequence from 'run-sequence'
 import rimraf from 'rimraf'
+
+// ===== HTML =====
+import ejs from 'gulp-ejs'
+import minifyHTML from 'gulp-minify-html'
+
+// ===== CSS =====
+import postcss from 'gulp-postcss'
+import autoprefixer from 'gulp-autoprefixer'
+import cssmin from 'gulp-cssmin'
+
+// ===== JavaScript =====
+import webpack from 'webpack'
+import webpackStream from 'webpack-stream'
+
+// ===== Image =====
 import imagemin from 'gulp-imagemin'
 import imageminJPG from 'imagemin-mozjpeg'
 import imageminPNG from 'imagemin-pngquant'
@@ -44,7 +54,8 @@ const options = minimist(process.argv.slice(2), knownOptions)
 const SETUP = new Setup(options.env); //引数は開発モード
 const CONF = SETUP.config()
 
-// ===== Support browser =====
+
+/* ==================== Support Browser ==================== */
 const SUPPORT_BROWSERS = browserslist(CONF.BROWSER_LIST)
 
 
@@ -66,6 +77,7 @@ function taskEJS(src, dist) {
     const data = { setting: CONF }
 
     gulp.src(src)
+        .pipe(changed(dist))
         .pipe(plumber({
             errorHandler: notify.onError("Error: <%= error.message %>")
         }))
@@ -102,6 +114,7 @@ function taskPostcss(src, dist) {
     const postcssSorting = require('postcss-sorting')
 
     gulp.src(src)
+        .pipe(changed(dist))
         .pipe(plumber({
             errorHandler: notify.onError("Error: <%= error.message %>")
         }))
@@ -151,6 +164,7 @@ gulp.task(CONF.TASK_IMG, () => {
 // ===== Function =====
 function imgTask(src, dist) {
     gulp.src(src)
+        .pipe(changed(dist))
         .pipe(imagemin([
             imageminPNG({
                 quality: '65-80',
@@ -185,6 +199,7 @@ gulp.task(CONF.TASK_SVG, () => {
 // ===== Function =====
 function svgTask(src, dist) {
     gulp.src(src)
+        .pipe(changed(dist))
         .pipe(svgmin())
         .pipe(gulp.dest(dist))
 }
