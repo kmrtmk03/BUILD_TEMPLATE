@@ -39,7 +39,10 @@ TARGETS_JS.map ( (target) => {
 /* ==================== Plugin Config ==================== */
 
 let PLUGINS = [
-    new webpack.ProvidePlugin({})
+    new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery'
+    })
 ]
 if(CONFIG.IS_PRODUCTION) {
     PLUGINS.push(
