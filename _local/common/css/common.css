@@ -35,6 +35,17 @@
         transition: .7s;
         left: 70%;
     }
+.Side-Title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem;
+}
+.Side-Link-Item {
+    margin: 0 0 0.25rem;
+}
+.Side-Link-Item:last-child {
+        margin: 0;
+    }
 .Side-Link-Text {
     text-decoration: underline;
 }

@@ -15,6 +15,20 @@ $Prefix: Side;
         left: 70%;
     }
 }
+
+.$(Prefix)-Title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem;
+}
+
+.$(Prefix)-Link-Item {
+    margin: 0 0 0.25rem;
+    &:last-child {
+        margin: 0;
+    }
+}
+
 .$(Prefix)-Link-Text {
     text-decoration: underline;
 }
