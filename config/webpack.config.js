@@ -29,7 +29,7 @@ let ENTRY_LIST = { 'js/index.js': CONFIG.TARGETS_JS_INDEX }
 
 // 下層の設定のentry設定
 const TARGETS_JS = CONFIG.TARGETS_JS
-TARGETS_JS.map ( (target) => {
+TARGETS_JS.map ( target => {
     const targetKey = target.slice(6)
     const targetValue = target
     ENTRY_LIST[targetKey] = targetValue
