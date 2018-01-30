@@ -71,13 +71,15 @@
 "use strict";
 
 
+var Prefix = 'Side';
+
 //get element
-var SideWrap = document.getElementById('Side-Wrap');
-var SideButton = document.getElementById('Side-Button');
+var SideWrap = document.getElementById(Prefix + '-Wrap');
+var SideButton = document.getElementById(Prefix + '-Button');
 
 //sidebar toggle
 SideButton.addEventListener('click', function () {
-    SideWrap.classList.toggle('Side-Wrap--Open');
+    SideWrap.classList.toggle(Prefix + '-Wrap--Open');
 });
 
 /***/ })
