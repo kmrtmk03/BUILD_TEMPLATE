@@ -10,6 +10,7 @@ $Prefix: Side;
     left: 100%;
     width: 30%;
     &--Open {
+        box-shadow: -2px 0px 4px 2px rgba(0, 0, 0, 0.15);
         transition: .7s;
         left: 70%;
     }
