@@ -16,3 +16,14 @@ $Prefix: Index;
     font-size: 2rem;
     font-weight: bold;
 }
+
+.$(Prefix)-Bar {
+  margin: 40px 0;
+}
+
+#defaultCanvas0,
+#defaultCanvas1,
+#defaultCanvas2,
+#defaultCanvas3 {
+  border-radius: 50px;
+}
