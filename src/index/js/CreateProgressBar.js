@@ -38,6 +38,7 @@ export default class CreateProgressBar {
   }
 
   setCss () {
+    this.tp.style.display = 'none'
     this.te.style.height = `${this.h}px`
   }
 
