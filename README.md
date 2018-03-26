@@ -42,6 +42,7 @@
 * postcss-calc
 * postcss-flexbugs-fixes
 * postcss-sorting
+* postcss-extend
 
 ## JavaScript
 * 共通JSは"common/js/common.js"に、ページ固有のJSは"各ページ/js/index.js"に各ファイルをrequire()で読み込む
